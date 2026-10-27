@@ -1,7 +1,13 @@
 [project]
-name = "fastapi-room-reservation"
-version = "0.1.0"
-requires-python = ">=3.12"
 dependencies = [
-    "fastapi[standard]>=0.160.0",
+  "fastapi[standard]>=0.160.0",
+  "psycopg[binary]>=3.3.6",
+  "python-dotenv>=1.2.4",
+  "sqlalchemy>=2.1.6",
 ]
+name = "fastapi-room-reservation"
+requires-python = ">=3.12"
+version = "0.1.0"
+
+[tool.fastapi]
+entrypoint = "main:app"
